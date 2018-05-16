@@ -1,0 +1,26 @@
+
+package javaapplication1;
+
+import java.util.Scanner;
+public class JavaApplication1
+{
+	public static void main(String[] args)
+	{
+		int i = 0, j=0, userin;
+		Scanner dec = new Scanner(System.in);
+		userin = dec.nextInt();
+	
+	int b[] = new int [10];
+	while(userin!=0)
+		{
+			b[i] = userin%2;		
+			userin = userin/2;
+			i++;
+		}
+		for(j=i-1;j>=0;j--)
+		{
+			System.out.print(b[j]);
+		}
+	}
+}
+		

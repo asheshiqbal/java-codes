@@ -1,0 +1,16 @@
+package javaapplication3;
+import java.util.Scanner;
+class JavaApplication3 {
+    public static void main(String[] args) 
+    {
+    Scanner input = new Scanner(System.in);
+    int userb = input.nextInt();
+    int userp = input.nextInt();
+    int r=1;
+     for(int i=0;i<userp;i++)
+    {
+        r=r*userb;
+    }
+        System.out.println(r);
+    }
+}

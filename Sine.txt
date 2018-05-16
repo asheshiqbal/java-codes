@@ -1,0 +1,27 @@
+package sine.func;
+import java.util.Scanner;
+
+public class SineFunc {
+    static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+        double y = in.nextInt();
+        double pi= 3.1416;
+        double x = (y*pi)/180;
+        double sum =0;
+        for(int i=0; i<15; i++)
+        {
+            sum += (Math.pow(-1,i)*Math.pow(x,(2*i) +1))/fact(i);
+        }
+        System.out.println(sum);
+    }
+
+    public static double fact(double i) {
+      double t=(2*i) +1;
+      double j=1;
+      for (int k=1;k<=t;k++)
+      {
+          j=j*k;
+      }
+        return j;
+    }
+}

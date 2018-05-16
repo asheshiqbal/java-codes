@@ -1,0 +1,24 @@
+
+package javaapplication5;
+
+import java.util.Scanner;
+
+public class JavaApplication5 
+{
+  public static void main(String arg[])
+    {
+         System.out.println("Enter a number:");
+         Scanner ob = new Scanner(System.in);
+         int n = ob.nextInt();
+         int sum=0,remainder;
+         while(n!=0)
+          {
+             remainder=n%10;
+             n=n/10;
+             sum=sum+remainder;
+          System.out.print(remainder);
+          }
+         System.out.print("Sum of the digits of the given number is:" + sum);
+     }
+}
+

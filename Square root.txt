@@ -1,0 +1,22 @@
+package manual.square.root.newton.iteration;
+
+import java.util.Scanner;
+
+
+public class ManualSquareRootNewtonIteration {
+
+
+    static Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {
+            {
+        int i = in.nextInt();
+        double b=0,c=1;
+        while (b!=c)
+        {
+            b=c;
+            c=  (.5*(b+(i/b)));
+        }
+        System.out.println(c);
+    }
+    }
+}
