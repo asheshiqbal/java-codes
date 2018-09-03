@@ -1,0 +1,4 @@
+There is one Circle class and one Cylinder class.
+Circle class has an area function.
+Cylinder class has to calculate the circle area at the base and height of its own (Cylinder area = Circle area * height).
+Use inheritence to calculate area of Cylinder.
